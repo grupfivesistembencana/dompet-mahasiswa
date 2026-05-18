@@ -205,24 +205,3 @@ export default function AuthScreen({ user }) {
     </div>
   );
 }
-```
-
----
-
-### Perubahan Utama:
-1. **Mengimpor Fungsi Firebase Baru:** Menambahkan fungsi bawaan `sendPasswordResetEmail` dari modul `'firebase/auth'`.
-2. **Menambahkan Mode Baru:** Variabel penentu alur `authMode` sekarang mendukung tiga kondisi: `'login'`, `'register'`, dan `'forgot'`.
-3. **Fungsi `handleForgotPassword`:** Menangani pengiriman instruksi reset otomatis ke email pengguna yang terdaftar lewat sistem backend Firebase.
-
----
-
-### Instruksi Pengaplikasian ke VS Code:
-
-1. Buka aplikasi **VS Code** Anda.
-2. Cari file di bawah folder komponen, yaitu **`src/components/AuthScreen.jsx`**.
-3. Hapus seluruh isi file `AuthScreen.jsx` lama Anda.
-4. Salin (*copy*) dan tempel (*paste*) seluruh baris kode yang ada di atas ke dalam file tersebut.
-5. Simpan file tersebut (**Ctrl + S** atau **Cmd + S** untuk Mac).
-6. Kembali ke terminal VS Code Anda, lalu pastikan proyek berjalan normal dengan mengetik perintah:
-   ```bash
-   npm run dev
